@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scroll-down.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Source+Sans+Pro:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      nav{
+        background: burlywood;
+      }
+      .jumbotron {
+        background: forestgreen;
+        background-image: url(https://images.pexels.com/photos/6037/nature-forest-trees-path.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+        padding: 10em 4em;
+        opacity: 0.7;
+      }
+      h1 {
+        font-size: 5em;
+        color: silver;
+        font-family: 'Source Sans Pro', sans-serif;
+        text-shadow: 1px 1px 2px black;
+        font-weight: bolder;
+      }
+      .statement {
+        font-size: 2em;
+        color: silver;
+        text-shadow: 1px 1px 2px black;
+        font-weight: bolder;
+      }
+      main {
+        background: rgb(192,192,192,.4);
+      }
+      h2 {
+        color: darkgreen;
+        font-family: 'Baloo Bhai', cursive;
+        margin-bottom: 1em;
+      }
+      h5 {
+        text-transform: uppercase;
+      }
+      p {
+        text-align: justify;
+      }
+      h4, h5, li, p {
+        font-family: 'Source Sans Pro', sans-serif;
+      }
+      .skill-bullets {
+        border-left: .5em double forestgreen;
+        padding-left: 1em;
+        border-right: .5em double forestgreen;
+        padding-right: 1em;
+      }
+      hr {
+        height: 12px;
+        border: 0;
+        box-shadow: inset 0 12px 12px -12px rgba(0, 100, 0, 0.5);
+      }
+      section {
+        margin: 1em;
+        padding: 1em;
+      }
+      .bullets {
+        border-left: .5em double burlywood;
+        border-right: .5em double burlywood;
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+      .bottom-section {
+        margin-bottom: 0;
+      }
+      .contact-form {
+        border: .5em double rgba(0, 100, 0, 0.5);
+        padding: 1.5em 1.5em 0em 1.5em;
+        margin: 0;
+      }
+      #about {
+        padding: 1em 1em 3em 1em;
+      }
+      .ct-btn-scroll {
+        width: 49px;
+        height: 49px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding-top: 1em;
+        z-index: 9;
+        border-radius: 50%;
+        -webkit-transition: background-color 0.25s ease-in-out;
+        transition: background-color 0.25s ease-in-out;
+        }
+    </style>
+    <title>Dani Sadorf</title>
+  </head>
+
+<body class="container-fluid">
+   <header> 
+    <nav class="site-header py-1">
+      <div class="flex-md-row justify-content-between">
+        <a class="py-2 col text-muted" href="#about">About Me</a>
+        <a class="py-2 col text-muted" href="#skills">Skills</a>
+        <a class="py-2 col text-muted" href="#projects">Projects</a>
+        <a class="py-2 col text-muted" href="#resume">Resume</a>
+        <a class="py-2 col text-muted" href="#contact">Contact Me</a>
+      </div>
+    </nav>
+    <div class="jumbotron">
+        <h1 class="text-center p-3">Dani Sadorf</h1>
+        <p class="statement text-center font-italic lead p-3 ml-5 mr-5">A lifelong learner with a passion for the outdoors. I am dedicated to improving my community through technology.</p>
+        <a class="ct-btn-scroll ct-js-btn-scroll" href="#about"><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"></a>
+    </div>
+  </header>
+
+
+  <main>
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="row">
+      <p class="col-9">I have dedicated my life to service, from disaster response to working as a wildland firefighter to building homes
+            with Habitat for Humanity. I have spent several years in hospitality and customer service, spending time at a ski resort,
+            a hostel, and a tour company. I am now pursuing a career in web development in order to create and improve programs that 
+            make life better for everyone. 
+      </p>
+      <iframe class="col-3" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D2026232317403585%26set%3Da.154049081288594%26type%3D3&width=500" width="125" height="154" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="skills">
+    <h2>Skills</h2>
+      <div class="skill-bullets">
+      <div class="leadership">
+        <h4>Leadership</h4>
+        <p>While working as a tour leader, I was regularly tasked 
+        with leading groups of 5-13 travelers from varying countries, 
+        including safety briefings before hiking days and history 
+        briefings for American cities. I also handled all logistics 
+        for the trips and consistently searched for new things to share 
+        with my groups. As a divemaster intern in Malaysia, I was 
+        responsible for briefing divers and managing everyone underwater. 
+        I made the trip enjoyable and showed divers the great sea life 
+        while also checking on safe diving practices and controlling the 
+        group’s movement. I have also taught karate, dance classes, 
+        kickboxing and environmental education.</p>
+      </div>
+      <div class="Communication">
+        <h4>Communication</h4>
+        <p>While working with both the International Rescue Committee 
+          and as a resource education intern, I have spent many hours 
+          speaking in front of large groups of up to 60 students, often 
+          times with little guidance or supervision. I have managed volunteers 
+          for three different non-profit organizations, including recruitment, 
+          training, safety briefings, and coordinating tasks for the volunteers.</p>
+      </div>
+      <div class="Technology">
+        <h4>Technology</h4>
+        <p>Prior to enrolling in a fullstack bootcamp, I had spent three years 
+          slowly experimenting with HTML, CSS, JavaScript, Python and R Studio. 
+          I am proficient in ArcGIS, I have learned data science through R Studio 
+          and Python, and I am learning basic UX design principles to compliment 
+          my fullstack knowledge. </p>
+      </div>
+    </div>
+    </section>
+
+  <hr>
+
+  <section id="projects">
+      <h2>Projects</h2>
+      <!--projects will go here with links to each project-->
+  </section>
+
+  <hr>
+
+  <section id="resume" class="bottom-section">
+    <h2>Resume</h2>
+    <div class="bullets">
+    <h5>Slope Maintenance Technician and Guest Services Attendant | Solitude Mountain Resort | Dec 2017 - Apr 2019</h5>
+      <ul>
+        <li>Responsible for operating a Sno-Cat to groom ski runs across the resort</li>
+        <li>Displayed strong attention to detail; daily checks and basic maintenance of heavy equipment</li>
+        <li>Helped guests with any questions about the resort</li>
+      </ul>
+    <h5>Tour Leader | AmeriCan Adventures | May 2017 - Sept 2018</h5>
+      <ul>
+        <li>Led groups of international passengers on cross-country trips while following DOT safety guidelines as a professional driver</li>
+        <li>Handled all logistics, including making reservations for extra activities and campgrounds, balancing food purchasing money, planning driving routes, making optional fun stops and remotely coordinating upcoming trips with management</li>
+      </ul>
+    <h5>Fitness Instructor | ILoveKickboxing.com South Jordan | Aug 2016 - Apr 2017</h5>
+      <ul>
+        <li>Taught kickboxing classes to large groups of members, checking for safe movements and encouraging everyone to work hard</li>
+        <li>Discussed membership options and assessed fitness goals to create personalized goals, helping all members  achieve their best results</li>
+      </ul>
+    <h5>Health Outreach AmeriCorps VISTA | International Rescue Committee, Salt Lake City | Apr - Oct 2016</h5>
+      <ul>
+        <li>Facilitated healthcare access for newly arrived refugees</li>
+        <li>Oversaw the health mentor volunteer program, a program that matched struggling clients with a mentor to help understand the healthcare system and learn to get to medical appointments</li>
+        <li>Recruited and trained volunteers and interns</li>
+      </ul>
+    <h5>Fire Technician 1 | Utah Department of Natural Resources | Mar - Oct 2015</h5>
+      <ul>
+        <li>Served as a member of a 23-person hotshot wildland firefighting crew to suppress forest fires throughout the western US</li>
+        <li>Worked in a position that required strong teamwork and perseverance to achieve goals set out by incident command</li>
+      </ul>
+    <h5>Forestry Technician, Fire | USDA Forest Service, Entiat Ranger District | May - Oct 2014</h5>
+      <ul>
+        <li>Served as a member of a 5-person engine crew member to suppress forest fires throughout Washington</li>
+    </ul>
+    <h5>Emergency Response Team Member | AmeriCorps St Louis | Aug 2012 - Aug 2013</h5>
+      <ul>
+        <li>Managed groups of up to 20 volunteers to clean up houses in the wake of superstorm Sandy</li>
+        <li>Maintained spreadsheets to track progress of debris clean-up and log of all contact with homeowners</li>
+        <li>Adapted to constantly varied assignments throughout the state with different conservation areas</li>
+      </ul>
+    </div>
+  </section>
+  </main>
+
+  <footer>
+    <div class="contact-form">
+    <h2 id="contact">Contact Me</h2>
+    <form>
+      <div class="row">
+        <div class="col form-group">
+          <label for="name">Name:</label>
+          <input type="text" name="name" required>
+        </div>
+        <div class="col form-group">
+          <label for="exampleInputEmail" type="email">Your email:</label>
+          <input type="email" placeholder="test@mailbox.com" id="exampleEmailInput" required>
+        </div>
+        <div class="col form-group">
+          <label for="exampleRecipientInput">Reason for contacting</label>
+          <select>
+            <option value="Option 1">Questions</option>
+            <option value="Option 2">Admiration</option>
+            <option value="Option 3">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group col-12">
+        <label for="exampleMessage">Message</label>
+        <textarea placeholder="Hi Dani …" class="form-control" rows="3"></textarea>
+        </label>
+        <input class="btn btn-primary" type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+    <nav id="footer-nav">
+      <ul class="nav">
+        <li class="nav-item"><a href="https://www.facebook.com/dani.sadorf" class="fa fa-facebook-square nav-link active"></a></li>
+        <li class="nav-item"><a href="https://twitter.com/dani_sadorf" class="fa fa-twitter-square nav-link active"></a></li>
+        <li class="nav-item"><a href="https://www.linkedin.com/in/dani-sadorf-a33319109/" class="fa fa-linkedin-square nav-link active"></a></li>
+      </ul>
+    </nav>
+    
+  </footer>
+</body>
+
+</html>
