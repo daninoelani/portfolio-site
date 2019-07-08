@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Source+Sans+Pro:900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+  <title>Finding the Best Biking Trails</title>
+</head>
+
+<body>
+  <div class="jumbotron">
+    <h1 class="text-center p-3">Finding the Best Biking Trails</h1>
+    <h3 class="statement text-center font-italic lead p-3 ml-5 mr-5">A UX Capstone Project Exploring How to Improve Communication and the Search for the Best Biking Trails</h3>
+  </div>
+<section id="ux-process">
+  <p>In the mountain biking world, there are currently two apps that reign supreme, providing the most information about the biking trails. Being out biking often, I noticed that most people preferred using an app called Trailforks, while I always preferred MTB Project. Many regions also have Facebook groups to help connect bikers with each other. I was curious to see where most people went for information and if there was a reason the people around me seemed to prefer one app over another.</p>
+  <p><strong>The Problem:</strong> There are apps providing mountain trail information, but these apps require clicking around a map and eventually settling on a trail. Informational websites allow users to search by features, such as “Best Beginner Trails in My Area”, but these websites don’t combine with maps. Is there a way to bring together everything people need to know in one place?</p>
+  <p><strong>The Solution:</strong> Talk to bikers about their favorite sources of information and what they feel is missing from their chosen solution. Build an app that allows for clicking the map, searching a list, and filtering results while also including a forum where bikers can easily ask questions about trails and conditions.</p>
+  <p><strong>My Role:</strong> I started with a heuristic analysis of competitors. I completed all user research, including a survey and interviews followed by affinity mapping, empathy mapping and personas. Moving forward with a solution idea, I created user flows, sketches, wireframes and a prototype before usability testing and iterating.</p>
+  <img src="./images/UXProcess.png" alt="UXProcess" width="700px">
+</section>
+<section id="user-interviews">
+  <h4>User Interviews</h4>
+  <p>In my experience out mountain biking, I had noticed more people using TrailForks, but I created a <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoMrVP5Xj8X_J1HcZUbOrpRELeu1VegudoaYBr8wTQtvJ51A/viewform?usp=sf_link" target="_blank">survey</a> to determine if my supposition was true. In a survey of fifteen people, more people did in fact use TrailForks, but it was only ten interviewees compared with nine who used MTB Project. This included four who use both apps regularly.</p>
+  <img src="./images/survey-results.png" alt="Survey Results" width="700px">
+  <p>I also found that 3 out of 15 people liked to get most of their information from social media and 10 people still prefer getting most trail information through word of mouth from their friends.</p>
+  <p>I explored this further with interviews of three people. While all three like to talk to friends and get personal recommendations of where to ride, all supplemented with one of the two apps. Only one admitted to preferring information available online, enjoying the overall volume of information available through multiple sources. For the two who seek out the majority of their information from friends, they not only want someone who knows their abilities and riding style but who also can answer any questions they may have.</p>
+</section>
+<section id="competitors">
+  <h4>Analysis of Competitors: What's Missing?</h4>
+  <img src="./images/MTB-project.png" alt="MTB Project Analysis" width="700px">
+  <p>Overall, MTB Project is straightforward and easy to use. It’s a little strange to only have the forums available online, not through the app. Users can search for specific trail names or click around to explore different trails, but there are no options to filter based on trail features*.</p>
+  <p>*While working on this project, MTB Project was in version 3.9. Following completion of my capstone project, MTB Project updated to version 4.0.1, which implemented a filter feature for the first time, similar to the filter I had designed during my project.</p>
+  <img src="./images/trailforks.png" alt="Trailforks Analysis" width="700px">
+  <p>TrailForks provides a lot of information about trails and a few different search and browse options. The main screen tends to be very crowded and the maps do not put trails together into routes unless the user searches in a specific area. Also, this app provides some filters to aide in the trail search but does not give many filter options. The app can be connected to Strava, a mile tracking service, and riders can donate money through Trail Karma. The website has feeds of rider activity but no forums for discussions. However, PinkBike, who operates TrailForks, has forums and biking news.</p>
+</section>
+<section id="user-research">
+  <h4>Synthesizing User Research</h4>
+  <article id="empathy">
+  <h5>Empathy Maps</h5>
+  <img src="./images/empathy1.png" alt="Tech-Savvy Empathy Map" width="400px">
+  <img src="./images/empathy2.png" alt="Social Butterfly Empathy Map" width="400px">
+  <img src="./images/empathy3.png" alt="Dirtbag Rider Empathy Map" width="400px">
+</article>
+<article id="personas">
+  <h5>Personas</h5>
+    <img src="./images/Persona4.png" alt="Tech-Savvy Tyler" width="400px">
+    <img src="./images/Persona2.png" alt="Social Butterfly Sam" width="400px">
+    <img src="./images/Persona1.png" alt="Dirtbag Danny" width="400px">
+</article>
+<h5>Pain Points and Ideation</h5>
+<p><strong>Pain:</strong> People don’t want to use an app that requires a lot of effort.<br> 
+    <strong>Brainstorm:</strong> How might we create one-click access to information?<br> 
+    <strong>Idea:</strong> Let’s create a filter feature that allows users to find exactly the type of trail that they are interested in riding.</p>
+    <p><strong>Pain:</strong> Even though they see the benefits of using an app, most people interviewed and surveyed still find it most useful to talk to a person, whether that is a friend, bike shop employee, or stranger in a Facebook group or online forum.<br>
+        <strong>Brainstorm:</strong> How might we provide a platform that allows all riders to ask questions and get recommendations, even if they don’t have a friend who is familiar with the area?<br>
+        <strong>Idea:</strong> Let’s make a forum that connects directly to the trail information app, allowing all users to ask questions and get answers based on their area.</p>
+        <p><strong>Pain:</strong> Trail conditions are regularly fluctuating based on the time of year.<br>
+            <strong>Brainstorm:</strong> How might we improve communication, allowing all riders to quickly and easily share trail information?<br>
+            <strong>Idea:</strong> Once we have created a discussion forum where everyone can ask questions, we can build an alert feature, allowing users to know exactly when their favorite trail is good to go. </p>
+</section>
+<section id="stories-flows-map">
+  <img src="./images/user-stories.png" alt="User Stories" width="700px">
+  <img src="./images/user-flow.png" alt="User Flow" width="700px">
+  <img src="./images/SiteMap.png" alt="Site Map" width="700px">
+  <p>Initially brainstorming for this project, I had been primarily interested in creating a filter that allows users to easily find trails based on specific features, including elevation gain, distance, and difficulty. I had not yet seen this exist anywhere and knew that as a user myself, I would certainly appreciate a filter. As I wrapped up my capstone project, MTB Project released an update which created this filter. However, through surveys and interviews, I found that most people still like having someone to talk to and ask questions, leading to a forum option.</p>
+  <p>Users want to be able to communicate with friends and strangers in much the same way. While friends will know them better, the important aspect of the minimum viable product is the ability to easily communicate with anyone. A good way to create groups will be by location. We want to allow users to ask clear questions and have other users respond in a timely manner. We also want a quick and easy way to get updates about trails, maybe by searching for the mention of this trail or by creating an alert to receive a push notification if a trail is mentioned in the discussions.</p>
+</section>
+
+<section id="guerrilla-testing">
+  <p>Speaking to people at an outdoor event, my biggest insights involved the discussion page. Everyone I spoke with uses social media regularly, but they all had slightly different ideas. One person was concerned about how to block haters. I want the discussions to be open to everyone, with users joining groups based on location. However, I will certainly need to account for protecting users from hateful speech maybe by setting some parameters and monitoring what is posted. I also need to determine how posts will flow. I think chronological will be best but one interviewee also supports upvoting, similar to Reddit, so that is worth considering.</p>
+  <p>My other big insight is that I need to find a few more ways to connect everything. I asked interviewees how they felt about the discussion and search features and one asked if the discussion could link directly back to the map. I think it would be helpful to add hyperlinks anytime someone in the discussion mentions a specific trail. The link could connect to either the trail on the map or the description of the trail itself. Thinking through this also made me realize that I had not made any sketches of trail description pages and will need to add this to my red routes.</p>
+</section>
+
+<section id="prototypes">
+  <h4>Wireframes, Prototypes and Usability Testing</h4>
+  <img src="./images/wireframes.png" alt="Wireframes" width="700px">
+  <img src="./images/prototypes1.png" alt="First Prototypes" width="700px">
+  <table>
+    <tr>
+      <th>Concerns</th>
+      <th>Second Iteration Updates</th>
+    </tr>
+    <tr>
+      <td>Elevation information is good, but could the trail information be broken down to allow for quick scanning.</td>
+      <td>Bullet points on top with a more detailed description below.</td>
+    </tr>
+    <tr>
+      <td>Would be nice to be able to view trails on the map and also as a list. Even better if the trails can be viewed with basic features so that user can compare quickly.</td>
+      <td>Created a trail list with distance and elevation to allow for quick viewing and comparisons.</td>
+    </tr>
+    <tr>
+      <td>Want to navigate directly from trail information back to the discussion forum already filtered to information about this particular trail.</td>
+      <td>Added a button to link directly from trail information back to discussion. Ideally, the discussion would also link directly to the map if a particular trail is mentioned.</td>
+    </tr>
+    <tr>
+      <td>Want to be able to save trails and find them right away.</td>     
+      <td>“Favorite” option to save trails to one’s profile.</td>
+    </tr>
+  </table>
+  <img src="./images/prototypes2.png" alt="Final Prototype" width="700px">
+  <h5>View the clickable prototype <a href="https://www.figma.com/file/L2NBVvBm8PKYEj6n1nCcQECU/Prototypes?node-id=0%3A1" target="_blank">HERE</a></h5>
+</section>
+
+</body>
+
+</html>
