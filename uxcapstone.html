@@ -12,13 +12,73 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Source+Sans+Pro:900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-  <style></style>
+  <style>
+    html,
+    body {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1em;
+      height: 100%;
+    }
+    #headline-image { 
+    position: relative;
+    top: 80%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%)
+  }
+  .text-box {
+  	position: absolute;
+  	top: 400px;
+  	left: 20px;
+    right: 20px;
+  	background-color: rgba(105,105,105,0.7);
+  	color: indigo;
+  	padding-left: 20px;
+  	padding-right: 20px;
+  	font-family: sans-serif;
+    -webkit-box-shadow: 3px 3px 16px -4px #000000; 
+    box-shadow: 3px 3px 16px -4px #000000;
+  	border-radius: 1em;
+  }
+    h1 {
+      font-size: 4em;
+      font-family: 'Source Sans Pro', sans-serif;
+      text-shadow: 1px 1px 2px black;
+      font-weight: bolder;
+    }
+    .statement {
+      font-size: 1.5em;
+      text-shadow: 1px 1px 2px black;
+      font-weight: bolder;
+    }
+    h2,
+    h4,
+    h5 {
+      color: darkgreen;
+      font-family: 'Baloo Bhai', cursive;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+    #sidenote {
+      font-size: .65em;
+    }
+    p {
+      text-align: justify;
+    }
+  </style>
 
   <title>Finding the Best Biking Trails</title>
 </head>
 
 <body>
-  <div class="jumbotron">
+  <img src="./images/biking.jpg" alt="Dani Biking" id="headline-image">
+  <div class="text-box">
     <h1 class="text-center p-3">Finding the Best Biking Trails</h1>
     <h3 class="statement text-center font-italic lead p-3 ml-5 mr-5">A UX Capstone Project Exploring How to Improve Communication and the Search for the Best Biking Trails</h3>
   </div>
@@ -40,7 +100,7 @@
   <h4>Analysis of Competitors: What's Missing?</h4>
   <img src="./images/MTB-project.png" alt="MTB Project Analysis" width="700px">
   <p>Overall, MTB Project is straightforward and easy to use. It’s a little strange to only have the forums available online, not through the app. Users can search for specific trail names or click around to explore different trails, but there are no options to filter based on trail features*.</p>
-  <p>*While working on this project, MTB Project was in version 3.9. Following completion of my capstone project, MTB Project updated to version 4.0.1, which implemented a filter feature for the first time, similar to the filter I had designed during my project.</p>
+  <p id="sidenote">*While working on this project, MTB Project was in version 3.9. Following completion of my capstone project, MTB Project updated to version 4.0.1, which implemented a filter feature for the first time, similar to the filter I had designed during my project.</p>
   <img src="./images/trailforks.png" alt="Trailforks Analysis" width="700px">
   <p>TrailForks provides a lot of information about trails and a few different search and browse options. The main screen tends to be very crowded and the maps do not put trails together into routes unless the user searches in a specific area. Also, this app provides some filters to aide in the trail search but does not give many filter options. The app can be connected to Strava, a mile tracking service, and riders can donate money through Trail Karma. The website has feeds of rider activity but no forums for discussions. However, PinkBike, who operates TrailForks, has forums and biking news.</p>
 </section>
